@@ -12,6 +12,8 @@ public class Sport {
         this.mTitle = mTitle;
     }
 
+    public Sport(){}
+
     public String getInfo() {
         return mInfo;
     }

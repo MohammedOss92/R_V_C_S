@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
+import com.example.r_v_c_a_s.Data.DataBase;
 import com.example.r_v_c_a_s.utils.CommonUtils;
 import com.example.r_v_c_a_s.utils.DividerItemDecoration;
 
@@ -43,12 +45,26 @@ public class MainActivity extends AppCompatActivity {
             //prepare data and show loading
             CommonUtils.hideLoading();
             ArrayList<Sport> mSports = new ArrayList<>();
-            String[] sportsList = getResources().getStringArray(R.array.sports_titles);
-            String[] sportsInfo = getResources().getStringArray(R.array.sports_info);
-            String[] sportsImage = getResources().getStringArray(R.array.sports_images);
-            for (int i = 0; i < sportsList.length; i++) {
-                mSports.add(new Sport( sportsInfo[i], "News", sportsList[i]));
-            }
+//            String[] sportsList = getResources().getStringArray(R.array.sports_titles);
+//            String[] sportsInfo = getResources().getStringArray(R.array.sports_info);
+//            String[] sportsImage = getResources().getStringArray(R.array.sports_images);
+//            for (int i = 0; i < sportsList.length; i++) {
+//                mSports.add(new Sport( sportsInfo[i], "News", sportsList[i]));
+//            }
+
+
+//            DataBase.getInstance(this).addNewRow();
+            DataBase.getInstance(this).addNewRow(getResources().getStringArray(R.array.sports_titles));
+
+            ArrayList<Sport> contactList = DataBase.getInstance(this).getAllPrayer();
+            Log.e("contactList", contactList.size() + " size");
+
+            DataBase db = new DataBase(this);
+            mSports.addAll(DataBase.getInstance(this).getAllPrayer());
+
+
+
+
             mSportAdapter.addItems(mSports);
             mRecyclerView.setAdapter(mSportAdapter);
         }, 2000);
