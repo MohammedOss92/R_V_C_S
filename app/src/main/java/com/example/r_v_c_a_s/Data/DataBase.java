@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 
 public class DataBase extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "a00";
+    private static final String DATABASE_NAME = "hqqnhj";
     private static final int DATABASE_VERSION = 1;
     public static Context context;
     private static DataBase sInstance;
@@ -49,8 +49,7 @@ public boolean checkIsDataAlreadyInDBorNot(SQLiteDatabase sqldb, String TableNam
     public void onCreate(SQLiteDatabase db) {
 
         //*******
-        String CREATE_Section_inf = "CREATE TABLE IF NOT EXISTS section_info(id INTEGER NOT NULL PRIMARY KEY," +
-                "name TEXT)";
+        String CREATE_Section_inf = "CREATE TABLE IF NOT EXISTS section_info(name TEXT)";
         db.execSQL(CREATE_Section_inf);
 
         String Create_Content="CREATE TABLE Content (Content_ID INTEGER NOT NULL PRIMARY KEY," +
@@ -62,7 +61,7 @@ public boolean checkIsDataAlreadyInDBorNot(SQLiteDatabase sqldb, String TableNam
 
     }
 
-    public void addNewRow( String name) {
+    public void addNewRow(String name) {
         ContentValues values = new ContentValues();
         SQLiteDatabase db = this.getWritableDatabase();
         if (!checkIsDataAlreadyInDBorNot(db, "section_info", "name", name)) {
@@ -102,8 +101,8 @@ public boolean checkIsDataAlreadyInDBorNot(SQLiteDatabase sqldb, String TableNam
                 Log.e (" cursor.getString date", cursor.getString (3) + "");// date
                 Log.e (" cursor.getString (4)", cursor.getString (4) + "");// time
 */
-                row.setInfo((cursor.getString(1)));
-//                row.setSubTitle(cursor.getString(2));
+//                row.setSubTitle((cursor.getString(1)));
+                row.setTitle(cursor.getString(0));
 //                row.setTitle(cursor.getString(3));
 
 

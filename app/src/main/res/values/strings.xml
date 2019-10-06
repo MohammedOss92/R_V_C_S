@@ -20,21 +20,21 @@
         <item>https://androidwave.com/media/images/img_tabletennis.jpg</item>
         <item>https://androidwave.com/media/images/img_tennis.jpg</item>
     </string-array>
-    <string-array name="sports_titles">
-        <item>Baseball</item>
-        <item>Badminton</item>
-        <item>Basketball</item>
-        <item>Bowling</item>
-        <item>Cycling</item>
-        <item>Golf</item>
-        <item>Running</item>
-        <item>Soccer</item>
-        <item>Swimming</item>
-        <item>Table Tennis</item>
-        <item>Tennis</item>
+<!--    <string-array name="sports_titles">-->
+<!--        <item>Baseball</item>-->
+<!--        <item>Badminton</item>-->
+<!--        <item>Basketball</item>-->
+<!--        <item>Bowling</item>-->
+<!--        <item>Cycling</item>-->
+<!--        <item>Golf</item>-->
+<!--        <item>Running</item>-->
+<!--        <item>Soccer</item>-->
+<!--        <item>Swimming</item>-->
+<!--        <item>Table Tennis</item>-->
+<!--        <item>Tennis</item>-->
 
 
-    </string-array>
+<!--    </string-array>-->
 
     <string-array name="sports_info">
         <item>Nike Enters 10-Year Partnership With Major League Baseball! </item>
