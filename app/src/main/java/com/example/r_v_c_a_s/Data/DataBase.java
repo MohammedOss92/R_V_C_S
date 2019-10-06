@@ -102,7 +102,7 @@ public boolean checkIsDataAlreadyInDBorNot(SQLiteDatabase sqldb, String TableNam
                 Log.e (" cursor.getString (4)", cursor.getString (4) + "");// time
 */
 //                row.setSubTitle((cursor.getString(1)));
-                row.setTitle(cursor.getString(0));
+                row.setInfo(cursor.getString(0));
 //                row.setTitle(cursor.getString(3));
 
 
