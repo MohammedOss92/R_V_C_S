@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 
 public class DataBase extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "hqqnhj";
+    private static final String DATABASE_NAME = "gsawwqsj";
     private static final int DATABASE_VERSION = 1;
     public static Context context;
     private static DataBase sInstance;
@@ -49,7 +49,7 @@ public boolean checkIsDataAlreadyInDBorNot(SQLiteDatabase sqldb, String TableNam
     public void onCreate(SQLiteDatabase db) {
 
         //*******
-        String CREATE_Section_inf = "CREATE TABLE IF NOT EXISTS section_info(name TEXT)";
+        String CREATE_Section_inf = "CREATE TABLE  section_info(name TEXT)";
         db.execSQL(CREATE_Section_inf);
 
         String Create_Content="CREATE TABLE Content (Content_ID INTEGER NOT NULL PRIMARY KEY," +

@@ -12,6 +12,12 @@ public class Sport {
         this.mTitle = mTitle;
     }
 
+    public Sport( String mInfo) {
+    //        this.mImageUrl = mImageUrl;
+            this.mInfo = mInfo;
+
+        }
+
     public Sport(){}
 
     public String getInfo() {

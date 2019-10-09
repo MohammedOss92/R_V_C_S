@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         prepareDemoContent();
 
-        getResources().getStringArray(R.array.sports_titles);
+//        getResources().getStringArray(R.array.sports_titles);
     }
 
     private void prepareDemoContent() {
@@ -48,17 +48,13 @@ public class MainActivity extends AppCompatActivity {
             CommonUtils.hideLoading();
             ArrayList<Sport> mSports = new ArrayList<>();
             String[] sportsList =getResources().getStringArray(R.array.sports_info);
-//            String[] sportsInfo = getResources().getStringArray(R.array.sports_info);
-//            String[] sportsImage = getResources().getStringArray(R.array.sports_images);
-//            for (int i = 0; i < sportsList.length; i++) {
-//                mSports.add(new Sport( sportsInfo[i], "News", sportsList[i]));
-//            }
+            DataBase.getInstance(this).addNewRow(sportsList[0]);
 
 
 //            DataBase.getInstance(this).addNewRow();
             for (int i = 0; i < sportsList.length; i++) {
                 DataBase.getInstance(this).addNewRow(sportsList[i]);
-
+//                Log.w("Size: ", "The size ",sportsList.length);
             }
 
             ArrayList<Sport> contactList = DataBase.getInstance(this).getAllPrayer();
