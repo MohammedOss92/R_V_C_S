@@ -7,7 +7,7 @@
     <string name="btn_retry">Retry</string>
 
     <string-array name="sports_images">
-
+        <item>aa</item>
         <item>https://androidwave.com/media/images/img_baseball.jpg</item>
         <item>https://androidwave.com/media/images/img_badminton.jpg</item>
         <item>https://androidwave.com/media/images/img_basketball.jpg</item>
@@ -20,23 +20,26 @@
         <item>https://androidwave.com/media/images/img_tabletennis.jpg</item>
         <item>https://androidwave.com/media/images/img_tennis.jpg</item>
     </string-array>
-<!--    <string-array name="sports_titles">-->
-<!--        <item>Baseball</item>-->
-<!--        <item>Badminton</item>-->
-<!--        <item>Basketball</item>-->
-<!--        <item>Bowling</item>-->
-<!--        <item>Cycling</item>-->
-<!--        <item>Golf</item>-->
-<!--        <item>Running</item>-->
-<!--        <item>Soccer</item>-->
-<!--        <item>Swimming</item>-->
-<!--        <item>Table Tennis</item>-->
-<!--        <item>Tennis</item>-->
+    <!--    <string-array name="sports_titles">-->
+    <!--        <item>Baseball</item>-->
+    <!--        <item>Badminton</item>-->
+    <!--        <item>Basketball</item>-->
+    <!--        <item>Bowling</item>-->
+    <!--        <item>Cycling</item>-->
+    <!--        <item>Golf</item>-->
+    <!--        <item>Running</item>-->
+    <!--        <item>Soccer</item>-->
+    <!--        <item>Swimming</item>-->
+    <!--        <item>Table Tennis</item>-->
+    <!--        <item>Tennis</item>-->
 
 
-<!--    </string-array>-->
+    <!--    </string-array>-->
 
     <string-array name="sports_info">
+        <item>AAAAAAAA</item>
+        <item>AAAAAAAA</item>
+        <item>AAAAAAAA</item>
         <item>https://androidwave.com/media/images/img_baseball.jpg</item>
         <item>https://androidwave.com/media/images/img_badminton.jpg</item>
         <item>https://androidwave.com/media/images/img_basketball.jpg</item>
@@ -3019,7 +3022,6 @@
 
 
         <item>معظم الرجال تقريبا يمكنهم تحمل الصعاب ، لكن إن أردت اختبار معدن رجل فاجعل له سلطة</item>
-
 
 
     </string-array>
